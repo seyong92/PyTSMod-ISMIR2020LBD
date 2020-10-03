@@ -55,8 +55,7 @@
         {% include site-header.html %}
         
         {% if page.layout == 'home' %}
-        {% assign page-tagline = site.institution | default: site.github.project_tagline | escape %}
-        {% assign page-tagline = site.author | default: site.github.project_tagline | escape %}
+        {% assign page-tagline = site.paperauthor | default: site.github.project_tagline | escape %}
         {% endif %}
         {% if page.layout == 'page' %}
         {% assign page-tagline = page.tagline | escape %}
