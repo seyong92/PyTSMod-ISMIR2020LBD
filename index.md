@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## PyTSMod: A Python Implementation of Time-Scale Modification Algorithms
 
-You can use the [editor on GitHub](https://github.com/seyong92/PyTSMod-ISMIR2020LBD/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Time-scale modification (TSM) is a digital audio effect that adjusts the length of an audio signal while preserving its pitch. The TSM audio effect is widely used in not only sound production but also music and audio research such as for data augmentation. In this paper, we present PyTSMod, an open-source Python library that implements several different classical TSM algorithms. We expect that PyTSMod can help MIR and audio researchers easily use the TSM algorithms in the Python-based environment.   
 
 ### Markdown
 
