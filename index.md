@@ -25,3 +25,9 @@ $ pip install pytsmod
 ## Examples
 
 ## References
+
+[1] Jonathan Driedger, Meinard Müller. "TSM Toolbox: MATLAB Implementations of Time-Scale Modification Algorithms", *Proceedings of the 17th International Conference on Digital Audio Effects (DAFx-14).* 2014.
+
+[2] Jonathan Driedger, Meinard Müller. "A review of time-scale modification of music signals", *Applied Sciences, 6(2), 57.* 2016.
+
+[3] Udo Zölzer. "DAFX: digital audio effects", *John Wiley & Sons.* 2011.
