@@ -24,6 +24,14 @@ $ pip install pytsmod
 
 ## Examples
 
+| Algorithm | Original | α=0.5 | α=1.2
+| OLA |
+| TD-PSOLA |
+| WSOLA |
+| Phase vocoder |
+| Phase vocoder (with phase lock) |
+| HPTSM |
+
 ## References
 
 [1] Jonathan Driedger, Meinard Müller. "TSM Toolbox: MATLAB Implementations of Time-Scale Modification Algorithms", *Proceedings of the 17th International Conference on Digital Audio Effects (DAFx-14).* 2014.
