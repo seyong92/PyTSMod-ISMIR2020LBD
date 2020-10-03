@@ -21,3 +21,8 @@ plugins:
 
 target-blank:
     rel: nofollow
+
+github:
+  repository_url: https://github.com/KAIST-MACLab/PyTSMod
+  paper_url: "about:blank"
+  video_url: "about:blank"
