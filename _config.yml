@@ -1,6 +1,5 @@
 title: "PyTSMod: A Python Implementation of Time-Scale Modification Algorithms"
-institution: Music and Audio Computing Lab., KAIST
-paperauthor: Sangeon Yong, Juhan Nam
+description: Music and Audio Computing Lab., KAIST
 show_downloads: true
 
 baseurl: "/PyTSMod-ISMIR2020LBD" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
