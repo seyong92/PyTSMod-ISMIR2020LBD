@@ -25,7 +25,7 @@ $ pip install pytsmod
 ## Examples
 
 | Algorithm | Original | α=0.5 | α=1.2
-| OLA | ![original](assets/images/original.png) |
+| OLA | ![original](assets/images/original.png) <br/> <audio controls><source src="assets/audio/original.wav"></audio>|
 | TD-PSOLA [^1] |
 | WSOLA |
 | PV |
