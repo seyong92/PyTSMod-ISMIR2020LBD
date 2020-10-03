@@ -26,11 +26,13 @@ $ pip install pytsmod
 
 | Algorithm | Original | α=0.5 | α=1.2
 | OLA |
-| TD-PSOLA |
+| TD-PSOLA [^1] |
 | WSOLA |
-| Phase vocoder |
-| Phase vocoder (with phase lock) |
+| PV |
+| PV (with phase lock) |
 | HPTSM |
+
+[^1]: [CREPE](https://github.com/marl/crepe) is used for pitch tracking of the audio source.
 
 ## References
 
