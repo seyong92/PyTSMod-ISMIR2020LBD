@@ -1,5 +1,6 @@
-title: Cayman Blog Theme
-description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and Gitlab/GitHub Pages.
+title: PyTSMod: A Python Implementation of Time-Scale Modification Algorithms
+description: Music and Audio Computing Lab., KAIST
+pageauthor: Sangeon Yong and Juhan Nam
 show_downloads: true
 
 baseurl: "/PyTSMod-ISMIR2020LBD" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
