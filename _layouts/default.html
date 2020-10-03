@@ -55,8 +55,8 @@
         <!-- {% include site-header.html %} -->
         
         {% if page.layout == 'home' %}
-        {% assign page-tagline = site.description | default: site.github.project_tagline | escape %}
-        {% assign page-pageauthor = site.pageauthor | escape %}
+        {% assign page-tagline = site.institution | default: site.github.project_tagline | escape %}
+        {% assign page-author = site.author | escape %}
         {% endif %}
         {% if page.layout == 'page' %}
         {% assign page-tagline = page.tagline | escape %}
@@ -68,7 +68,7 @@
         <section class="page-header">
             <h1 class="project-name">{{ page-title }}</h1>
             <h2 class="project-tagline">{{ page-tagline }}</h2>
-            <h2 class="project-taglin">{{ page-pageauthor }}</h2>
+            <h2 class="project-tagline">{{ page-author }}</h2>
             {% if page.layout == 'home' and site.github.is_project_page %}
             <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
             {% if site.show_downloads %}
