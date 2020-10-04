@@ -40,12 +40,12 @@ $ pip install pytsmod
 ### Singing Voice
 
 | Algorithm | Original | α=0.5 | α=1.2 | α=1.5 |
-| OLA | <image src="assets/images/singing-original.png" height="100"> <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-original.wav"></audio>| <image src="assets/images/singing-ola-050.png" height="100"> <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-050.wav"> | ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"> |
-| TD-PSOLA [^1] | | 
-| WSOLA |
-| PV |
-| PV (with phase lock) |
-| HPTSM |
+| OLA | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-original.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-150.flac"></audio>
+| TD-PSOLA [^1] | | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-150.flac"></audio> 
+| WSOLA | | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-150.flac"></audio>
+| PV | | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-150.flac"></audio>
+| PV (with phase lock) | | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-150.flac"></audio>
+| HPTSM | | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-150.flac"></audio>
 
 [^1]: [CREPE](https://github.com/marl/crepe) is used for pitch tracking of the audio source.
 
