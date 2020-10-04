@@ -2,6 +2,19 @@
 layout: home
 title: "PyTSMod: A Python Implementation of Time-Scale Modification Algorithms"
 ---
+<style>
+.main-content table {
+    display: inline-table;
+}
+table {
+    table-layout:fixed;
+    width: 100%;
+    overflow: hidden;
+}
+#player{
+    width: 100%;
+}
+</style>
 
 ## Overview
 
@@ -25,7 +38,7 @@ $ pip install pytsmod
 ## Examples
 
 | Algorithm | Original | α=0.5 | α=1.2
-| OLA | ![original](assets/images/original.png) <br/> <audio controls><source src="assets/audio/original.wav"></audio>| ![original](assets/images/original.png) <br/> <audio controls><source src="assets/audio/original.wav"> | ![original](assets/images/original.png) <br/> <audio controls><source src="assets/audio/original.wav"> |
+| OLA | ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"></audio>| ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"> | ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"> |
 | TD-PSOLA [^1] |
 | WSOLA |
 | PV |
