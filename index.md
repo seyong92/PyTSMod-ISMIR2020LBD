@@ -23,8 +23,11 @@ Time-scale modification (TSM) is a digital audio effect that adjusts the length 
 ## Available TSM algorithms
 
 * Overlap-Add (OLA)
+    * OLA is the most simple TSM algorithm that changes the length of the signal through modifying the hop size between analysis frame and synthesis frame.
 * Pitch Synchronous Overlap-Add (TD-PSOLA)
+    * TD-PSOLA is the algorithm that analyzes the orignal waveforms to create pitich-synchronous analysis windows and synthesize the output signal both for modifying time-scale and pitch-scale.
 * Waveform Similarity Overlap-Add (WSOLA)
+    * WSOLA maximizes the waveform similarity by allowing timing tolerance to analysis frame to find the most similar position through cross correlation.
 * Phase Vocoder (PV)
 * TSM based on harmonic-percussive source separation (HPTSM)
 
@@ -47,13 +50,30 @@ $ pip install pytsmod
 
 | Algorithm | α=0.5 | α=1.2 | α=1.5 |
 | OLA | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-150.flac"></audio> |
-| TD-PSOLA [^1] | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-150.flac"></audio> |
+| TD-PSOLA [^1] | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-150.flac"></audio> |
 | WSOLA | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-150.flac"></audio> |
 | PV | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-150.flac"></audio> |
-| PV (with phase lock) | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-120.flac"></audio> | <audio contorls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-150.flac"></audio> |
+| PV (with phase lock) | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-150.flac"></audio> |
 | HPTSM | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-150.flac"></audio> |
 
-[^1]: [CREPE](https://github.com/marl/crepe) is used for pitch tracking of the audio source.
+### Music Clip
+
+#### Original
+
+<audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-original.flac"></audio>
+
+#### TSM Results
+
+| Algorithm | α=0.5 | α=1.2 | α=1.5 |
+| OLA | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-ola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-ola-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-ola-150.flac"></audio> |
+| WSOLA | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-wsola-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-wsola-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-wsola-150.flac"></audio> |
+| PV | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pv-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pv-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pv-150.flac"></audio> |
+| PV (with phase lock) | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pvlock-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pvlock-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pvlock-150.flac"></audio> |
+| HPTSM | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-hp-050.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-hp-120.flac"></audio> | <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-hp-150.flac"></audio> |
+
+For more audio examples, please visit the [GitHub repo](https://github.com/KAIST-MACLab/PyTSMod) of PyTSMod.
+
+[^1]: [CREPE](https://github.com/marl/crepe) is used for extracting pitch of the audio source.
 
 ## References
 
