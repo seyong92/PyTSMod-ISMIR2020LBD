@@ -29,7 +29,9 @@ Time-scale modification (TSM) is a digital audio effect that adjusts the length 
 * Waveform Similarity Overlap-Add (WSOLA)
     * WSOLA maximizes the waveform similarity by allowing timing tolerance to analysis frame to find the most similar position through cross correlation.
 * Phase Vocoder (PV)
+    * Phase vocoder estimates instantaneous frequency, and it is used to update phases of input signal's frequency components in short-time Fourier transform. Although TSM results with phase vocoder has high phase continuity, it causes an transient smearing for percussive audio sources and a coloring artifact called phasiness.
 * TSM based on harmonic-percussive source separation (HPTSM)
+    * A novel TSM algorithm that applying phase vocoder to only harmonic sources and applying OLA to only percussive sources.
 
 ## Installation
 
