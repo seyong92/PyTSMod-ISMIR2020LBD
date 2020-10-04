@@ -37,8 +37,10 @@ $ pip install pytsmod
 
 ## Examples
 
-| Algorithm | Original | α=0.5 | α=1.2
-| OLA | ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"></audio>| ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"> | ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"> |
+### Singing Voice
+
+| Algorithm | Original | α=0.5 | α=1.2 | α=1.5 |
+| OLA | ![original](assets/images/singing-original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-original.wav"></audio>| ![original](assets/images/singing-ola-050.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-050.wav"> | ![original](assets/images/original.png) <br/> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/original.wav"> |
 | TD-PSOLA [^1] |
 | WSOLA |
 | PV |
